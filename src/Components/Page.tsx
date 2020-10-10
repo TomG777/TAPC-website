@@ -1,5 +1,6 @@
 import { Heading, Pane } from 'evergreen-ui'
 import React from 'react';
+import {colors, setColors} from '../Constants'
 
 type PageProps = {
     name?: string
@@ -20,6 +21,7 @@ export default function Page({ name, children }: PageProps) {
             marginRight="auto">
                 <Heading marginLeft={24} size={800}>{name}</Heading>
                 {children}
+
         </Pane>
     );
 

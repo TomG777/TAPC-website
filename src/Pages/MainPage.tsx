@@ -31,6 +31,7 @@ export default function MainPage() {
                     We will gather in the Educafé.
                 </CardText>
             </InfoCard>
+            
         </Page>
     );
 }
