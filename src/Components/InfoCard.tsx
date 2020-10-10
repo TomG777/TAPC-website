@@ -9,8 +9,8 @@ type InfoCardProps = {
 export default function InfoCard({ title, children }: InfoCardProps) {
 
     return (
-        <Pane flex={1} flexDirection="column"  display="flex"
-        justifyContent="center" margin={8} borderLeft="default" borderRight="default" width="100%">
+        <Pane flex={1} flexDirection="column"  display="flex" elevation={1}
+        justifyContent="center" margin={8} width="100%">
             <Pane margin={24}>
                 {typeof title === 'string' &&
                     <Pane borderBottom="default" marginBottom={12} width="100%">
