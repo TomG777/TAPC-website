@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Button, Pane, Tab, TabNavigation, majorScale, Heading, Avatar } from 'evergreen-ui'
+import { Pane, Tab, TabNavigation, majorScale, Heading } from 'evergreen-ui'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MainPage from './Pages/MainPage';
 import InfoPage from './Pages/InfoPage';

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button, Pane, Paragraph, Tab, TabNavigation } from 'evergreen-ui'
 import InfoCard, { CardText } from '../Components/InfoCard'
 import Page from '../Components/Page';
 
@@ -23,6 +22,7 @@ export default function MainPage() {
                 'gezellig' (which is an untranslatable Dutch word).
                 </CardText>
             </InfoCard>
+
             <InfoCard title="Location">
                 <CardText>
                     The competition will take place in the Westzaal in the zilverling. The schedule is available in the programme found at the bottom of this page.
