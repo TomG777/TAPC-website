@@ -9,7 +9,7 @@ type InfoCardProps = {
 export default function InfoCard({ title, children }: InfoCardProps) {
 
     return (
-        <Pane flex={1} flexDirection="column"  display="flex" elevation={1}
+        <Pane flex={1} flexDirection="column"  display="flex" elevation={1} background="tint2"
         justifyContent="center" margin={8} width="100%">
             <Pane margin={24}>
                 {typeof title === 'string' &&
