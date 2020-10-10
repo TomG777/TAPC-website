@@ -11,7 +11,7 @@ export default function Page({ name, children }: PageProps) {
 
     return (
         <Pane
-            width={1600}
+            width="75%"
             margin={24}
             display="flex"
             justifyContent="center"
