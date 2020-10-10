@@ -17,7 +17,7 @@ export default function WebPages() {
         <BrowserRouter>
             <Pane height={majorScale(6)} flex={1} alignItems="center" display="flex" justifyContent="center">
                 <TabNavigation>
-                    {['Home Page', 'Information', 'Rules', 'Participate', 'Contact', 'Scores'].map((tab, index) => (
+                    {['Home Page', 'Information', 'Rules', 'Participate', 'Contact', 'Scores'].map((tab) => (
                         <Tab key={tab} is="a" href={(tab !== 'Home Page') ? tab : "/"} id={tab}>
                             {tab}
                         </Tab>
