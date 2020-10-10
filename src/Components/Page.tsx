@@ -13,12 +13,13 @@ export default function Page({ name, children }: PageProps) {
     return (
         <Pane
             width="75%"
-            margin={24}
             display="flex"
             justifyContent="center"
             flexDirection="column"
             marginLeft="auto"
-            marginRight="auto">
+            marginRight="auto"
+            marginTop="250px">
+
                 <Heading marginLeft={24} size={800}>{name}</Heading>
                 {children}
 
