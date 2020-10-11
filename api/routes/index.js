@@ -12,10 +12,11 @@ router.get('/mail', function(req, res, next) {
 
 router.post('/mail', function(req, res, next) {
 
-    const name1 = req.body['name']
-    const email1 = req.body['email']
+    const name1 = req.body['name1']
+    const email1 = req.body['email1']
+    const number1 = req.body['number1']
 
-    res.send(`Name is ${name1} and the email is ${email1}`);
+    res.send(`Name is ${name1} and the email is ${email1} and the number is ${number1}`);
     // res.send(name1)
 });
 
