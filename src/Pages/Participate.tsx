@@ -95,8 +95,7 @@ export default function Participate() {
                     />
                 </div>
             </InfoCard>
-            <Button marginTop={12} onClick={() => callApi()}>Send</Button>
-            <p>Hey: {response}</p>
+            <Button margin={8} style={{width: 300}} onClick={() => callApi()}>Submit Registration</Button>
 
             <Dialog
                 isShown={backendError}

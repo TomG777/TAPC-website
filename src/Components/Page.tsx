@@ -18,6 +18,7 @@ export default function Page({ name, children }: PageProps) {
             flexDirection="column"
             marginLeft="auto"
             marginRight="auto"
+            marginBottom='50px'
             marginTop="10px">
 
                 <Heading marginLeft={24} size={800}>{name}</Heading>
