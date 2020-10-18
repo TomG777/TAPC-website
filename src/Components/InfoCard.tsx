@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pane, Heading, Paragraph } from 'evergreen-ui'
-import { colors, setColors } from '../Constants'
+import { setColors } from '../Constants'
 
 type InfoCardProps = {
     title?: string

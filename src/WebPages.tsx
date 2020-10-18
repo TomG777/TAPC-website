@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MainPage from './Pages/MainPage';
 import Scores from './Pages/Scores';
@@ -7,16 +6,9 @@ import Rules from './Pages/Rules';
 import Participate from './Pages/Participate';
 import Contact from './Pages/Contact';
 
-import { colors, setColors } from './Constants';
-import Banner from './Components/Banner';
 
 
 export default function WebPages() {
-
-    // Hacky way to set the background color
-    useEffect(() => {
-        document.styleSheets[0].insertRule(`html { background-color: ${setColors.generalBackground} }`, 0);
-    });
 
 
     return (

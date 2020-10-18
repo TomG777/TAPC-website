@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Button, Dialog, Heading, Paragraph, TextInput } from 'evergreen-ui'
+import React from 'react';
+import { Button, Dialog, Heading, TextInput } from 'evergreen-ui'
 import Page from '../Components/Page';
 import InfoCard, { CardText } from '../Components/InfoCard';
 

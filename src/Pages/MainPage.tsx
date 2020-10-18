@@ -17,7 +17,7 @@ export default function MainPage() {
                 </CardText>
                 <CardText>
                     During the match lunch will be arranged, and after the match there will be a drink. The winner will be announced at the drink.
-                The winning official team (and sometimes more teams) can join the <a target="_blank" href="http://bapc.eu">Benelux Algorithm Programming Contest</a>,
+                The winning official team (and sometimes more teams) can join the <a rel="noopener noreferrer" target="_blank" href="http://bapc.eu">Benelux Algorithm Programming Contest</a>,
                 representing Twente.
                 Participation in the TAPC is a hundred percent free (free as in free beer). Every year both the competition and the drink are very
                 'gezellig' (which is an untranslatable Dutch word).
