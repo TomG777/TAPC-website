@@ -23,7 +23,7 @@ export default function Banner() {
 
                 <Pane height={majorScale(6)} width="100%" flex={1} alignItems="center" display="flex" justifyContent="center" marginBottom={8}>
                     <TabNavigation>
-                        {['Home Page', 'Information', 'Rules', 'Participate', 'Contact', 'Scores'].map((tab) => (
+                        {['Home Page', 'Rules', 'Participate', 'Contact', 'Scores'].map((tab) => (
                             <Tab color={setColors.navBarcolors} key={tab} is="a" href={(tab !== 'Home Page') ? tab : "/"} id={tab}>
                                 {tab}
                             </Tab>

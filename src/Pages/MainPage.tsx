@@ -1,3 +1,4 @@
+import { Table } from 'evergreen-ui';
 import React from 'react';
 import InfoCard, { CardText } from '../Components/InfoCard'
 import Page from '../Components/Page';
@@ -25,13 +26,70 @@ export default function MainPage() {
 
             <InfoCard title="Location">
                 <CardText>
-                    The competition will take place in the Westzaal in the zilverling. The schedule is available in the programme found at the bottom of this page.
+                    This year due to COVID-19 the event will take place online. We will let you know how
+                    this will effect the competition and how you can participate soon.
                 </CardText>
+            </InfoCard>
+            <InfoCard title="Tools">
                 <CardText>
-                    We will gather in the Educafé.
+                    <p>The following languages will be available during the contest:</p>
+                    <ul>
+                        <li>Java</li>
+                        <li>C / C++</li>
+                        <li>Python 2</li>
+                        <li>Python 3</li>
+                    </ul>
+                </CardText>
+            </InfoCard>
+            <InfoCard title="Programme">
+                <CardText>
+                    <Table>
+                        <Table.Head>
+                            <Table.TextHeaderCell>
+                                Time
+                            </Table.TextHeaderCell>
+                            <Table.TextHeaderCell>
+                                Activity
+                            </Table.TextHeaderCell>
+                        </Table.Head>
+                        <Table.Body>
+                            <Table.Row>
+                                <Table.TextCell>
+                                    11:00
+                            </Table.TextCell>
+                                <Table.TextCell>
+                                    Test setup, with the test question
+                            </Table.TextCell>
+                            </Table.Row>
+                            <Table.Row>
+                                <Table.TextCell>
+                                    11:45
+                            </Table.TextCell>
+                                <Table.TextCell>
+                                    Welcome speech
+                            </Table.TextCell>
+                            </Table.Row>
+                            <Table.Row>
+                                <Table.TextCell>
+                                    12:00
+                            </Table.TextCell>
+                                <Table.TextCell>
+                                    Competition starts
+                            </Table.TextCell>
+                            </Table.Row>
+                            <Table.Row>
+                                <Table.TextCell>
+                                    17:00
+                            </Table.TextCell>
+                                <Table.TextCell>
+                                    End of competition
+                            </Table.TextCell>
+                            </Table.Row>
+                        </Table.Body>
+                    </Table>
                 </CardText>
             </InfoCard>
 
-        </Page>
+        </Page >
     );
 }
