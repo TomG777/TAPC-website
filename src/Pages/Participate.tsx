@@ -19,14 +19,14 @@ export default function Participate() {
         body: JSON.stringify({
             team: `${team[0]}`, official: team[1],
             name1: `${person1[0]}`, email1: `${person1[2]}`, number1: `${person1[1]}`,
-            name2: `${person2[0]}`, email2: `${person1[2]}`, number2: `${person1[1]}`,
-            name3: `${person3[0]}`, email3: `${person1[2]}`, number3: `${person1[1]}`,
+            name2: `${person2[0]}`, email2: `${person2[2]}`, number2: `${person2[1]}`,
+            name3: `${person3[0]}`, email3: `${person3[2]}`, number3: `${person3[1]}`,
 
         })
     };
 
     function callApi() {
-        fetch("http://localhost:9000/mail", requestOptions)
+        fetch("http://localhost:5000/register", requestOptions)
             .then(res => res.text())
             .then(res => { console.log(res); setResponse(res); })
             .catch(() => setBackendError(true))
@@ -52,6 +52,46 @@ export default function Participate() {
                     <Heading marginRight={40}>Email: </Heading>
                     <TextInput marginLeft={172}
                         onChange={(e: any) => setPerson1([person1[0], person1[1], e.target.value])}
+                    />
+                </div>
+            </InfoCard>
+            <InfoCard title="Participant 2">
+                <div style={{ display: 'flex', alignItems: "center", marginBottom: "20px" }}>
+                    <Heading marginRight={40}>Name: </Heading>
+                    <TextInput marginLeft={170}
+                        onChange={(e: any) => setPerson2([e.target.value, person2[1]])}
+                    />
+                </div>
+                <div style={{ display: 'flex', alignItems: "center", marginBottom: "20px" }}>
+                    <Heading marginRight={40}>Student number: </Heading>
+                    <TextInput marginLeft={100}
+                        onChange={(e: any) => setPerson2([person2[0], e.target.value])}
+                    />
+                </div>
+                <div style={{ display: 'flex', alignItems: "center" }}>
+                    <Heading marginRight={40}>Email: </Heading>
+                    <TextInput marginLeft={172}
+                        onChange={(e: any) => setPerson2([person2[0], person2[1], e.target.value])}
+                    />
+                </div>
+            </InfoCard>
+            <InfoCard title="Participant 3">
+                <div style={{ display: 'flex', alignItems: "center", marginBottom: "20px" }}>
+                    <Heading marginRight={40}>Name: </Heading>
+                    <TextInput marginLeft={170}
+                        onChange={(e: any) => setPerson3([e.target.value, person3[1]])}
+                    />
+                </div>
+                <div style={{ display: 'flex', alignItems: "center", marginBottom: "20px" }}>
+                    <Heading marginRight={40}>Student number: </Heading>
+                    <TextInput marginLeft={100}
+                        onChange={(e: any) => setPerson3([person3[0], e.target.value])}
+                    />
+                </div>
+                <div style={{ display: 'flex', alignItems: "center" }}>
+                    <Heading marginRight={40}>Email: </Heading>
+                    <TextInput marginLeft={172}
+                        onChange={(e: any) => setPerson3([person3[0], person3[1], e.target.value])}
                     />
                 </div>
             </InfoCard>
